@@ -1,0 +1,48 @@
+public class PigLatinApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//translate("orange");
+	}
+	
+	public static String translate (String english) {
+		char firstLetter = english.charAt(0);
+		String word = "";
+		english=english.toLowerCase();
+					
+	
+		if (firstLetter =='a'||firstLetter=='e'||firstLetter=='i'||firstLetter=='o'||firstLetter=='u') {
+			//for(int i=0; i<english.length();i++) {
+				//word = word + english.charAt(i);
+			
+			//}
+			System.out.println(english+ "ay");
+			return english +"ay"; 
+			
+		}else {
+			//for(int i=1; i<english.length();i++) {
+				//word = word + english.charAt(i);
+				
+			//}
+			String novowel = "";
+			for (int i=0; i<english.length();i++) {
+				if(english.charAt(i)=='a'||english.charAt(i)=='e'||english.charAt(i)=='i'||english.charAt(i)=='o'||english.charAt(i)=='u') {
+					word=english.substring(i,english.length());
+					break;
+					
+				}else {
+					novowel=novowel + english.charAt(i);
+				}
+				
+			}
+			//word=english.substring(1,english.length());
+			return word+novowel+"ay";
+		}
+		
+		
+		//String lastLetter = 
+		
+		
+		//return word+"ay";
+	}
+}
