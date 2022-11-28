@@ -1,0 +1,33 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class PigLatinAppTest {
+// I looking in the room pig for the book called translate and inside of the book will 
+// be a chapter called puppies
+	@Test
+	public void puppies() {
+		PigLatinApp pig = new PigLatinApp();
+		String translatedName = pig.translate("puppies");
+		assertEquals("uppiespay", translatedName);
+	}
+	@Test
+	public void orange() {
+		PigLatinApp pig =new PigLatinApp();
+		String translatedName = pig.translate("orange");
+		assertEquals("orangeay", translatedName);
+		
+	}
+	@Test
+	public void when() {
+		PigLatinApp pig = new PigLatinApp();
+		String translatedName =pig.translate("when");
+		assertEquals("enwhay",translatedName);
+	}
+	@Test
+	public void giant() {
+		PigLatinApp pig = new PigLatinApp();
+		String translatedName=pig.translate("GiAnT");
+		assertEquals("iantgay",translatedName);
+	}
+}
